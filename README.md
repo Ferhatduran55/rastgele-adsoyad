@@ -1,2 +1,2 @@
-# rastgele-adsoyad
-Rastgele İsim-Soyisim üretir.
+# Rastgele Ad-Soyad
+Rastgele Ad-Soyad üretir.
