@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL & ~E_NOTICE); //offset error disable
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING); //offset error disable
 define('ROOT', dirname(__FILE__).DIRECTORY_SEPARATOR);
 require_once "Classes/Main.php";
 if(isset($_POST['type'])){
