@@ -12,9 +12,7 @@ require_once "Classes/Main.php";
     <?php FileManagement::GetAssets("js"); ?>
   </head>
   <body class="bg-dark">
-    <?php
-    $user = new User(UserManagement::GenerateName(),UserManagement::GenerateSurname());
-    ?>
+    <?php $user = UserManagement::NewUser(); ?>
     <div class="container-fluid">
       <div class="row">
         <div style="font-size:4vh;" class="col-12 m-1 p-2 bg-info text-white text-center">
@@ -25,5 +23,6 @@ require_once "Classes/Main.php";
         </div>
       </div>
     </div>
+    <?php UserManagement::RemoveUser($user);?>
   </body>
 </html>
