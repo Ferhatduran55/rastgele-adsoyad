@@ -64,6 +64,18 @@ class UserManagement
   {
     return self::$soyadlar;
   }
+  public static function NewUser()
+  {
+    return new User(self::GenerateName(),self::GenerateSurname());
+  }
+  public static function RemoveUser($user)
+  {
+    unset($user);
+    if(!isset($user))
+    {
+      return "RemoveUser process finished!";
+    }
+  }
 }
 UserManagement::SetupNSN();
 ?>
